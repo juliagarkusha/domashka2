@@ -5,11 +5,7 @@ const getGreatestNumbersHandler = () => {
     const userNumberUnits = userNumber % 10;
     const userNumberTens = ((userNumber - userNumberUnits) / 10) % 10;
     const userNumberHundreds = (userNumber - (userNumber % 100)) / 100;
-
-    console.log('debug userNumberHundreds', userNumberHundreds, typeof userNumberHundreds)
-    console.log('debug userNumberTens', userNumberTens, typeof userNumberTens)
-    console.log('debug userNumberUnits', userNumberUnits, typeof userNumberUnits)
-
+    
     if(userNumberUnits === userNumberTens && userNumberTens === userNumberHundreds) {
         console.log('Все цифры одинаковые');
     } else if (userNumberUnits === userNumberTens || userNumberTens === userNumberHundreds || userNumberUnits === userNumberHundreds) {
