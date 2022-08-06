@@ -34,7 +34,7 @@ const onSignInHandler = () => {
         return;
     }
 
-    console.log(`Вы ввели правильный логин (${userPassword})`);
+    console.log(`Вы ввели правильный пароль (${userPassword})`);
     console.log('Авторизация пользователя прошла успешно!');
     alert('Авторизация пользователя прошла успешно!')
 }
